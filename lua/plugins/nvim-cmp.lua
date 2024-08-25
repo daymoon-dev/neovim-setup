@@ -25,7 +25,7 @@ return {
     cmp.setup({
       completion = {
         completeopt = "menu,menuone,preview,noselect",
-    },
+      },
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
@@ -53,7 +53,7 @@ return {
           maxwidth = 50,
           ellipsis_char = "...",
         }),
-      }
+      },
     })
   end,
 }
