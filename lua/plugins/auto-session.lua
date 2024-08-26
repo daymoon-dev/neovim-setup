@@ -5,7 +5,7 @@ return {
     'nvim-telescope/telescope.nvim', -- Only needed if you want to use session lens
   },
   opts = {
-    auto_session_suppress_dirs = { '~/', '~/Projects', '~/Downloads', '/', '~/development/' },
+    auto_session_suppress_dirs = { '*' },
     -- log_level = 'debug',
   }
 }
