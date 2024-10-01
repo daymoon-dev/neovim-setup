@@ -11,7 +11,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "tsserver", "tailwindcss", "emmet_ls" },
+        ensure_installed = { "lua_ls", "ts_ls", "tailwindcss", "emmet_ls", "svelte" },
       })
     end,
   },
@@ -20,7 +20,8 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
-      lspconfig.tsserver.setup({})
+      lspconfig.ts_ls.setup({})
+      lspconfig.svelte.setup({})
 
       keyMapper("K", vim.lsp.buf.hover)
       keyMapper("gd", vim.lsp.buf.definition)
